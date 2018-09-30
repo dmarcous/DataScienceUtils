@@ -6,7 +6,7 @@ from sklearn.metrics import roc_auc_score
 class EvaluationUtils:
 
     @staticmethod
-    def evaluateBinaryAcceptanceModel(actual_labels, predicted_probabilites):
+    def evaluateBinaryClassifier(actual_labels, predicted_probabilites):
         if(actual_labels is None or predicted_probabilites is None):
             raise ValueError(
                 "actual_labels & predicted_probabilites need to be passed")
